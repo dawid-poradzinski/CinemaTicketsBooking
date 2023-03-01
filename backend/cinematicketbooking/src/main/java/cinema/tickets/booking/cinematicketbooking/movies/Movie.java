@@ -12,7 +12,7 @@ public class Movie
 {
     // główny klucz
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO) // Można tworzyć własne poprzez @SequenceGenerator (o ile się zwiększa itd)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE) // Można tworzyć własne poprzez @SequenceGenerator (o ile się zwiększa itd)
     @Column(name = "id", updatable = false) //Opis poszczególnych kolumn. Nie musi tego być. Wybieramy nazwę i że nie może być updatowana kolumna id
     private Integer id;
 
